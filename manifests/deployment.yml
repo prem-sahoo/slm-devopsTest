@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: slmdevopstest 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: slmdevopstest 
+    spec:
+      containers:
+        - name: slmdevopstest 
+          image: hellodevops.azurecr.io/slmdevopstest
+          ports:
+          - containerPort: 8080
