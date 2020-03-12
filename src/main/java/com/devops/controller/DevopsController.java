@@ -18,6 +18,8 @@ public class DevopsController {
       
       memberList.add(new DevMember("prem", "Developer"));
       memberList.add(new DevMember("Sahoo", "Tester"));
+	  memberList.add(new DevMember("guru", "Developer"));
+	  memberList.add(new DevMember("xxx", "Developer"));
       
       return memberList;
     }
